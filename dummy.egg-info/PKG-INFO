@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: dummy
-Version: 0.0.1
-Summary: Just a dummy package
-Author: zishan
-Requires-Dist: numpy
-Requires-Dist: pandas
