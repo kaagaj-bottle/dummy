@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 
 setup(
     name="dummy",
@@ -6,4 +6,5 @@ setup(
     description="Just a dummy package",
     author="zishan",
     install_requires=["numpy", "pandas"],
+    packages=find_packages()
 )
