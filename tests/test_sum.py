@@ -1,7 +1,7 @@
 import unittest
 from fractions import Fraction
 
-from pkgs import s1
+from pkgs.s1.mod1 import sum
 
 
 class TestSum(unittest.TestCase):
@@ -9,13 +9,13 @@ class TestSum(unittest.TestCase):
     def test_list_int(self):
 
         data = [1, 2, 3, 4]
-        result = s1.mod1.sum(data)
+        result = sum(data)
         self.assertEqual(result, 10)
 
     def test_list_fraction(self):
 
         data = [Fraction(1, 2), Fraction(1, 4), Fraction(1, 4)]
-        result = s1.mod1.sum(data)
+        result = sum(data)
         self.assertEqual(result, 1)
 
 
