@@ -2,11 +2,11 @@ import sys
 import os
 import pytest
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+# sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from fractions import Fraction
 
-from pkgs.s1 import mod1
+import pkgs
 
 
 @pytest.mark.parametrize(
@@ -18,4 +18,4 @@ from pkgs.s1 import mod1
     ],
 )
 def test_sum(value, expected_result):
-    assert mod1.sum(value) == expected_result
+    assert pkgs.s1.mod1.sum(value) == expected_result
