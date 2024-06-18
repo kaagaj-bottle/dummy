@@ -1,3 +1,6 @@
+from collections import Counter
+
+
 def sum(arg):
     s = 0
     for val in arg:
@@ -14,9 +17,4 @@ def multiply(arg):
 
 
 def count_char(text):
-    countMap = {}
-
-    for ch in text:
-        countMap[ch] = countMap.get(ch, 0) + 1
-
-    return countMap
+    return Counter(text)
