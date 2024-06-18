@@ -4,3 +4,10 @@ def sum(arg):
         s += val
 
     return s
+
+
+def multiply(arg):
+    p = 1
+    for val in arg:
+        p *= val
+    return p

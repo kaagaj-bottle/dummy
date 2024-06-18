@@ -5,7 +5,8 @@ import pytest
 
 from fractions import Fraction
 
-from pkgs import sum 
+from pkgs import sum, multiply
+
 
 @pytest.mark.parametrize(
     "value, expected_result",
@@ -17,3 +18,8 @@ from pkgs import sum
 )
 def test_sum(value, expected_result):
     assert sum(value) == expected_result
+
+
+@pytest.mark.parametrize("value, expected_result", [([1, 2, 3], 6), ([0, 1, 24], 0)])
+def test_multiply(value, expected_result):
+    assert multiply(value) == expected_result
