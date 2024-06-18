@@ -5,6 +5,6 @@ setup(
     version="0.0.01",
     description="Just a dummy package",
     author="zishan",
-    install_requires=["numpy", "pandas"],
-    packages=find_packages()
+    install_requires=["numpy", "pandas", "pytest"],
+    packages=find_packages(),
 )
