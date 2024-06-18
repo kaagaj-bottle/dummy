@@ -1,1 +1,6 @@
-value = "This is module 1 inside sub package 1"
+def sum(arg):
+    s = 0
+    for val in arg:
+        s += val
+
+    return s

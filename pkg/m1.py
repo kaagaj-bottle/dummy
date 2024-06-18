@@ -1,1 +1,6 @@
-value="This is m1 inside pkg"
+def sum(arg):
+    s = 0
+    for val in arg:
+        s += val
+
+    return s
