@@ -14,4 +14,9 @@ def multiply(arg):
 
 
 def count_char(text):
-    return len(text)-text.count(' ')
+    countMap = {}
+
+    for ch in text:
+        countMap[ch] = countMap.get(ch, 0) + 1
+
+    return countMap

@@ -26,7 +26,14 @@ def test_multiply(value, expected_result):
 
 
 @pytest.mark.parametrize(
-    "value, exptected_result", [("Hello, World", 11), ("Foo Bar is John Doe", 15)]
+    "value, exptected_result",
+    [
+        (
+            "Hello, World",
+            {"H": 1, "e": 1, "l": 3, "o": 2, ",": 1, " ": 1, "W": 1, "r": 1, "d": 1},
+        ),
+        ("Foo Bar", {"F": 1, "o": 2, " ": 1, "B": 1, "a": 1, "r": 1}),
+    ],
 )
 def test_count(value, exptected_result):
     assert count_char(value) == exptected_result
