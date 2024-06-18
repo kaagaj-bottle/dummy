@@ -14,8 +14,4 @@ def multiply(arg):
 
 
 def count_char(text):
-    count = 0
-    for ch in text:
-        if ch != " ":
-            count += 1
-    return count
+    return len(text)-text.count(' ')
